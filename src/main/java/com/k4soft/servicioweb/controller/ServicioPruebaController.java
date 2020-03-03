@@ -19,5 +19,10 @@ public class ServicioPruebaController {
         return numero1 + numero2;
     }
 
+    @GetMapping("/v1/{numero1}/{numero2}/multiplicacion")
+    public int multiplicar(@PathVariable( required = true) int numero1, @PathVariable(required = true) int numero2){
+        return numero1 * numero2;
+    }
+
 
 }
