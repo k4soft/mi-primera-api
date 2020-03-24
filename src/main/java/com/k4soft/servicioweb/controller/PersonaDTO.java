@@ -2,18 +2,28 @@ package com.k4soft.servicioweb.controller;
 
 public class PersonaDTO {
 
-    private Integer id;
+    private Integer idPersona;
     private String nombres;
     private String apellidos;
 
-
-    public Integer getId() {
-        return id;
+    public PersonaDTO(Integer idPersona, String nombres, String apellidos) {
+        this.idPersona = idPersona;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public Integer getIdPersona() {
+        return idPersona;
     }
+
+    public void setIdPersona(Integer idPersona) {
+        this.idPersona = idPersona;
+    }
+
+    public PersonaDTO(){
+        super();
+    }
+
 
     public String getNombres() {
         return nombres;
